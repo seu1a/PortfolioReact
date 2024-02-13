@@ -1,4 +1,5 @@
 import { Component } from "react";
+
 import * as S from "../../styles/global";
 
 class Container extends Component {
@@ -6,3 +7,5 @@ class Container extends Component {
     return <S.Container />;
   }
 }
+
+export default Container;

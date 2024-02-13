@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import { Container } from "../styles/global";
+import Container from "../components/global/Container";
 
 class Home extends Component {
   render() {
