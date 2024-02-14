@@ -1,10 +1,15 @@
 import { Component } from "react";
 
-import Container from "../components/global/Container";
+import * as S from "../styles/Global";
+import Profile from "../components/profile/Profile";
 
 class Home extends Component {
   render() {
-    return <Container></Container>;
+    return (
+      <S.VerticalAlignedContainer>
+        <Profile />
+      </S.VerticalAlignedContainer>
+    );
   }
 }
 
