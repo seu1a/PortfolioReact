@@ -5,7 +5,11 @@ import * as S from "../../styles/Profile";
 
 class Profile extends Component {
   render() {
-    return <S.ProfileBox />;
+    return (
+      <S.ProfileBox>
+        <S.ProfileImageDiv />
+      </S.ProfileBox>
+    );
   }
 }
 
