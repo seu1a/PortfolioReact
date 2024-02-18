@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import * as S from "../styles/Global";
+import * as S from "../styles/global/global";
 import Profile from "../components/profile/Profile";
 
 class Home extends Component {
