@@ -9,6 +9,7 @@ class Profile extends Component {
       <S.ProfileBox>
         <S.ProfileImageDiv />
         <S.ProfileDivideDiv />
+        <S.ProfileNameSpan>이슬아</S.ProfileNameSpan>
       </S.ProfileBox>
     );
   }
