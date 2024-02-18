@@ -9,14 +9,16 @@ export const ProfileBox = styled.div`
 
   width: 650px;
   height: 350px;
+
+  background-color: aqua;
 `;
 
 export const ProfileImageDiv = styled.div`
   position: relative;
   left: 25px;
 
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   background-color: none;
 
   border: 7.5px solid #363636;
@@ -37,4 +39,11 @@ export const ProfileDivideDiv = styled.div`
 
 export const ProfileNameSpan = styled.span`
   position: relative;
+  left: 85px;
+  bottom: 60px;
+
+  font-family: "DoHyeon";
+  font-size: 50px;
+
+  color: #363636;
 `;
