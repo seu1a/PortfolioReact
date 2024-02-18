@@ -1,27 +1,40 @@
 import { styled } from "styled-components";
 
 export const ProfileBox = styled.div`
-  /* 가운데 정렬 */
   position: relative;
   margin: 0 auto;
 
-  /* 내부 속성 수직 정렬 */
   display: flex;
   align-items: center;
 
   width: 650px;
   height: 350px;
-  background-color: aqua;
 `;
 
 export const ProfileImageDiv = styled.div`
   position: relative;
   left: 25px;
 
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
   background-color: none;
 
-  border: 5.5px solid #363636;
+  border: 7.5px solid #363636;
   border-radius: 50%;
+`;
+
+export const ProfileDivideDiv = styled.div`
+  position: relative;
+  left: 60px;
+
+  width: 7.5px;
+  height: 125px;
+
+  background-color: #363636;
+
+  border-radius: 5px;
+`;
+
+export const ProfileNameSpan = styled.span`
+  position: relative;
 `;
