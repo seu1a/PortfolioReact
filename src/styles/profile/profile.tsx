@@ -37,6 +37,14 @@ export const ProfileDivideDiv = styled.div`
   border-radius: 5px;
 `;
 
+export const ProfileDetailWrapper = styled.div`
+  position: relative;
+
+  display: flex;
+
+  flex-direction: row;
+`;
+
 export const ProfileNameSpan = styled.span`
   position: relative;
   left: 85px;
@@ -62,6 +70,11 @@ export const ProfileSocialWrap = styled.div`
   position: relative;
 
   display: flex;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: white;
 `;
 
 export const ProfileSocialDiv = styled.div`
