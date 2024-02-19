@@ -9,13 +9,11 @@ export const ProfileBox = styled.div`
 
   width: 650px;
   height: 350px;
-
-  background-color: aqua;
 `;
 
 export const ProfileImageDiv = styled.div`
   position: relative;
-  left: 25px;
+  left: 45px;
 
   width: 165px;
   height: 165px;
@@ -27,7 +25,7 @@ export const ProfileImageDiv = styled.div`
 
 export const ProfileDivideDiv = styled.div`
   position: relative;
-  left: 60px;
+  left: 77.5px;
 
   width: 7px;
   height: 125px;
@@ -39,9 +37,9 @@ export const ProfileDivideDiv = styled.div`
 
 export const ProfileDetailWrapper = styled.div`
   position: relative;
-  left: 95px;
+  left: 110px;
 
-  width: 337.5px;
+  width: 320px;
   height: 300px;
 
   display: flex;
@@ -49,8 +47,6 @@ export const ProfileDetailWrapper = styled.div`
   justify-content: center;
 
   flex-direction: column;
-
-  background-color: blue;
 `;
 
 export const ProfileNameSpan = styled.span`
@@ -77,9 +73,7 @@ export const ProfileSocialWrap = styled.div`
   display: flex;
 
   width: 200px;
-  height: 75px;
-
-  background-color: white;
+  height: 55px;
 `;
 
 export const ProfileSocialDiv = styled.div`
