@@ -58,6 +58,18 @@ export const ProfileJobSpan = styled.span`
   color: #363636;
 `;
 
+export const ProfileSocialWrap = styled.div`
+  position: relative;
+
+  display: flex;
+`;
+
 export const ProfileSocialDiv = styled.div`
   position: relative;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #363636;
+  border-radius: 5px;
 `;

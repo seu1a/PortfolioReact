@@ -11,6 +11,11 @@ class Profile extends Component {
         <S.ProfileDivideDiv />
         <S.ProfileNameSpan>이슬아</S.ProfileNameSpan>
         <S.ProfileJobSpan>Web Full-Stack Dev</S.ProfileJobSpan>
+        <S.ProfileSocialWrap>
+          <S.ProfileSocialDiv />
+          <S.ProfileSocialDiv />
+          <S.ProfileSocialDiv />
+        </S.ProfileSocialWrap>
       </S.ProfileBox>
     );
   }
