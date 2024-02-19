@@ -90,4 +90,6 @@ export const ProfileSocialDiv = styled.div`
 
   background-color: #363636;
   border-radius: 5px;
+
+  margin-right: 5px;
 `;

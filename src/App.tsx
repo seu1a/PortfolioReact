@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 
 import "./App.css";
 
+import "./styles/profile/profile.css";
+
 class App extends Component {
   render() {
     return (
