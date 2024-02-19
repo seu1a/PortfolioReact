@@ -39,16 +39,22 @@ export const ProfileDivideDiv = styled.div`
 
 export const ProfileDetailWrapper = styled.div`
   position: relative;
+  left: 95px;
+
+  width: 337.5px;
+  height: 300px;
 
   display: flex;
 
-  flex-direction: row;
+  justify-content: center;
+
+  flex-direction: column;
+
+  background-color: blue;
 `;
 
 export const ProfileNameSpan = styled.span`
   position: relative;
-  left: 85px;
-  bottom: 60px;
 
   font-family: "DoHyeon";
   font-size: 50px;
@@ -58,7 +64,6 @@ export const ProfileNameSpan = styled.span`
 
 export const ProfileJobSpan = styled.span`
   position: relative;
-  right: 58px;
 
   font-family: "DoHyeon";
   font-size: 30px;
@@ -72,7 +77,7 @@ export const ProfileSocialWrap = styled.div`
   display: flex;
 
   width: 200px;
-  height: 50px;
+  height: 75px;
 
   background-color: white;
 `;
