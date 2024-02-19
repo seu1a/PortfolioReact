@@ -10,7 +10,7 @@ class Profile extends Component {
         <S.ProfileImageDiv />
         <S.ProfileDivideDiv />
         <S.ProfileNameSpan>이슬아</S.ProfileNameSpan>
-        <S.ProfileJobSpan>Frontend Developer</S.ProfileJobSpan>
+        <S.ProfileJobSpan>Web Full-Stack Dev</S.ProfileJobSpan>
       </S.ProfileBox>
     );
   }

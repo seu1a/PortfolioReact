@@ -29,7 +29,7 @@ export const ProfileDivideDiv = styled.div`
   position: relative;
   left: 60px;
 
-  width: 7.5px;
+  width: 7px;
   height: 125px;
 
   background-color: #363636;
@@ -56,4 +56,8 @@ export const ProfileJobSpan = styled.span`
   font-size: 30px;
 
   color: #363636;
+`;
+
+export const ProfileSocialDiv = styled.div`
+  position: relative;
 `;
