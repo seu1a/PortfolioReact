@@ -21,6 +21,14 @@ export const ProfileImageDiv = styled.div`
 
   border: 7.5px solid #363636;
   border-radius: 50%;
+
+  overflow: hidden;
+`;
+
+export const ProfileImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const ProfileDivideDiv = styled.div`
