@@ -7,7 +7,9 @@ class Profile extends Component {
   render() {
     return (
       <S.ProfileBox>
-        <S.ProfileImageDiv />
+        <S.ProfileImageDiv>
+          <S.ProfileImage src="images/profile_img.jpg" />
+        </S.ProfileImageDiv>
 
         <S.ProfileDivideDiv />
 

@@ -21,6 +21,14 @@ export const ProfileImageDiv = styled.div`
 
   border: 7.5px solid #363636;
   border-radius: 50%;
+
+  overflow: hidden;
+`;
+
+export const ProfileImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `;
 
 export const ProfileDivideDiv = styled.div`
@@ -52,6 +60,8 @@ export const ProfileDetailWrapper = styled.div`
 export const ProfileNameSpan = styled.span`
   position: relative;
 
+  margin-bottom: 5px;
+
   font-family: "DoHyeon";
   font-size: 50px;
 
@@ -60,6 +70,8 @@ export const ProfileNameSpan = styled.span`
 
 export const ProfileJobSpan = styled.span`
   position: relative;
+
+  margin-bottom: 10px;
 
   font-family: "DoHyeon";
   font-size: 30px;
