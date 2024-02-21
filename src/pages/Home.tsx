@@ -8,6 +8,7 @@ class Home extends Component {
     return (
       <S.VerticalAlignedContainer>
         <Profile />
+        <S.ArrowDownBottom />
       </S.VerticalAlignedContainer>
     );
   }
