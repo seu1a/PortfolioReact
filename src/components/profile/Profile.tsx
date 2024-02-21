@@ -18,9 +18,9 @@ class Profile extends Component {
           <S.ProfileJobSpan>Web Full-Stack Dev</S.ProfileJobSpan>
 
           <S.ProfileSocialWrap>
-            <S.ProfileSocialDiv className="profile-social-div" />
-            <S.ProfileSocialDiv className="profile-social-div" />
-            <S.ProfileSocialDiv className="profile-social-div" />
+            <S.ProfileSocialDiv />
+            <S.ProfileSocialDiv />
+            <S.ProfileSocialDiv />
           </S.ProfileSocialWrap>
         </S.ProfileDetailWrapper>
       </S.ProfileBox>
