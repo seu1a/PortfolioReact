@@ -7,7 +7,7 @@ import Project from "../components/project/Project";
 class Home extends Component {
   render() {
     return (
-      <>
+      <div id ="Home">
         <S.VerticalAlignedContainer>
          <Profile />
          <S.ArrowDownBottom />
@@ -16,7 +16,7 @@ class Home extends Component {
         <S.VerticalAlignedContainer>
           <Project />
         </S.VerticalAlignedContainer>
-      </>
+      </div>
     );
   }
 }
