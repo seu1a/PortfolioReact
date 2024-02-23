@@ -4,7 +4,11 @@ import * as S from "../../styles/project/project"
 
 class Project extends Component {
     render() {
-        return ( <S.ProjectBox /> )
+        return ( <S.ProjectBox>
+            <S.ProjectElement />
+            <S.ProjectElement />
+            <S.ProjectElement />
+        </S.ProjectBox> )
     }
 }
 
