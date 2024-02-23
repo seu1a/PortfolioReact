@@ -8,7 +8,7 @@ export const ProjectBox = styled.div`
     align-items: center;
 
     width: 100%;
-    height: 350px;
+    height: 252.5px;
 
     background-color: #363636;
 `
