@@ -16,8 +16,8 @@ export const ProjectBox = styled.div`
 export const ProjectElement = styled.div`
     position: relative;
 
-    width: 450px;
-    height: 300px;
+    width: 350px;
+    height: 200px;
     
     margin: 15px;
 
