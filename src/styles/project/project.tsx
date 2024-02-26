@@ -42,7 +42,7 @@ export const ProjectName = styled.span`
 
   border-radius: 15px;
 
-  line-height: 30px;
+  line-height: 29px;
   font-family: "Jua";
   font-size: 17px;
 
