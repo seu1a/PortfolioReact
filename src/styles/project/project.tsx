@@ -43,8 +43,8 @@ export const ProjectName = styled.span`
   border-radius: 15px;
 
   line-height: 30px;
-  font-family: "DoHyeon";
-  font-size: 13px;
+  font-family: "Jua";
+  font-size: 17px;
 
   color: white;
   background-color: #363636;
