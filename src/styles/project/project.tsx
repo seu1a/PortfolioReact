@@ -11,6 +11,8 @@ export const ProjectBox = styled.div`
   height: 252.5px;
 
   background-color: #363636;
+
+  overflow: scroll;
 `;
 
 export const ProjectElement = styled.div`
