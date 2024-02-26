@@ -1,27 +1,53 @@
 import { styled } from "styled-components";
 
 export const ProjectBox = styled.div`
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    width: 100%;
-    height: 252.5px;
+  width: 100%;
+  height: 252.5px;
 
-    background-color: #363636;
-`
+  background-color: #363636;
+
+  overflow: scroll;
+`;
 
 export const ProjectElement = styled.div`
-    position: relative;
+  position: relative;
 
-    width: 350px;
-    height: 200px;
-    
-    margin: 15px;
+  width: 350px;
+  height: 200px;
 
-    background-color: white;
+  display: flex;
+  justify-content: center;
 
-    border-radius: 15px;
-`
+  margin: 15px;
+
+  background-color: white;
+
+  border-radius: 15px;
+`;
+
+export const ProjectName = styled.span`
+  position: absolute;
+  bottom: 15px;
+
+  height: 30px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  line-height: 29px;
+  font-family: "Jua";
+  font-size: 17px;
+
+  color: white;
+  background-color: #363636;
+`;

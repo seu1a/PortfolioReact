@@ -2,3 +2,8 @@
   font-family: "DoHyeon";
   src: url("./fonts/DoHyeon.ttf");
 }
+
+@font-face {
+  font-family: "Jua";
+  src: url("./fonts/Jua.ttf");
+}
