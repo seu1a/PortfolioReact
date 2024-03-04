@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 
-import addVisibleCount from "./addVisibleCount";
+import setVisibleCount from "./setVisibleCount";
 
 const rootReducer = combineReducers({
-  addVisibleCount,
+  setVisibleCount,
 });
 
 export default rootReducer;
