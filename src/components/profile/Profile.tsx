@@ -1,4 +1,8 @@
 import React, { createRef, Component, RefObject } from "react";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+
+import { increase, decrease } from "../../reducers/addVisibleCount";
 
 import * as S from "../../styles/profile/profile";
 
@@ -18,6 +22,17 @@ class Profile extends Component<{}, ProfileState> {
     };
   }
 
+  selector = useSelector((state: ProfileState) => state.visibleCount);
+  dispatch = useDispatch();
+
+  increamentHandler = () => {
+    this.dispatch(increase());
+  };
+
+  decreamentHandler = () => {
+    this.dispatch(decrease());
+  };
+
   offerScroll = () => {
     const { top: ProfileBoxTop } =
       this.ProfileBoxRef.current!.getBoundingClientRect();
@@ -26,9 +41,7 @@ class Profile extends Component<{}, ProfileState> {
       ProfileBoxTop >= 0 && ProfileBoxTop <= window.innerHeight;
 
     if (ProfileImageDivIsInViewport) {
-      this.setState((prevState) => ({
-        visibleCount: prevState.visibleCount + 1,
-      }));
+      this.increamentHandler();
     }
 
     console.log(this.state.visibleCount);
