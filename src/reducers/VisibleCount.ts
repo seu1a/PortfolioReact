@@ -4,11 +4,12 @@ const initialState = {
 
 const SET_VISIBLE_COUNT = "SET_VISIBLE_COUNT" as const;
 
-export const set_visible_count = () => ({
+export const set_visible_count = (count: number) => ({
   type: SET_VISIBLE_COUNT,
+  payload: {
+    visibleCount: count,
+  },
 });
-
-type Action = ReturnType<typeof set_visible_count>;
 
 type State = {
   visibleCount: number;
@@ -16,11 +17,11 @@ type State = {
 
 export default function setVisibleCount(
   state = initialState,
-  action: Action
+  action: ReturnType<typeof set_visible_count>
 ): State {
   switch (action.type) {
     case "SET_VISIBLE_COUNT":
-      return { visibleCount: state.visibleCount + 1 };
+      return { visibleCount: action.payload.visibleCount };
 
     default:
       return state;
