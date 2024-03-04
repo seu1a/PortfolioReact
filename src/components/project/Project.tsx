@@ -11,11 +11,11 @@ class Project extends Component {
         </S.ProjectElement>
 
         <S.ProjectElement>
-          <S.ProjectName>테스트</S.ProjectName>
+          <S.ProjectName>대소고 야호</S.ProjectName>
         </S.ProjectElement>
 
         <S.ProjectElement>
-          <S.ProjectName>테스트</S.ProjectName>
+          <S.ProjectName>asfasdfasdf</S.ProjectName>
         </S.ProjectElement>
       </S.ProjectBox>
     );

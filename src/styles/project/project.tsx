@@ -51,3 +51,12 @@ export const ProjectName = styled.span`
   color: white;
   background-color: #363636;
 `;
+
+export const ProjectImageDiv = styled.div`
+  position: relative;
+
+  width: 100%;
+  height: 200px;
+
+  overflow: hidden;
+`;

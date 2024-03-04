@@ -1,22 +1,36 @@
 import React, { createRef, Component, RefObject } from "react";
+import { connect, useDispatch } from "react-redux";
+import { RootState } from "../../reducers";
+
+import { set_visible_count } from "../../reducers/VisibleCount";
 
 import * as S from "../../styles/profile/profile";
 
 interface ProfileState {
   visibleCount: number;
+  set_visible_count: (count: number) => void;
 }
 
-class Profile extends Component<{}, ProfileState> {
+class Profile extends Component<
+  {
+    visibleCount: number;
+    set_visible_count: (count: number) => void;
+  },
+  ProfileState
+> {
   private ProfileBoxRef: RefObject<HTMLDivElement>;
 
-  constructor(props: {}) {
+  constructor(props: {
+    visibleCount: number;
+    set_visible_count: (count: number) => void;
+  }) {
     super(props);
     this.ProfileBoxRef = createRef();
-
-    this.state = {
-      visibleCount: 0,
-    };
   }
+
+  settingHandler = (count: number) => {
+    this.props.set_visible_count(count);
+  };
 
   offerScroll = () => {
     const { top: ProfileBoxTop } =
@@ -25,13 +39,15 @@ class Profile extends Component<{}, ProfileState> {
     const ProfileImageDivIsInViewport =
       ProfileBoxTop >= 0 && ProfileBoxTop <= window.innerHeight;
 
+    let visibleCount = 0;
+
     if (ProfileImageDivIsInViewport) {
-      this.setState((prevState) => ({
-        visibleCount: prevState.visibleCount + 1,
-      }));
+      visibleCount = 1;
     }
 
-    console.log(this.state.visibleCount);
+    this.settingHandler(visibleCount);
+
+    console.log(this.props.visibleCount);
   };
 
   componentDidMount(): void {
@@ -48,9 +64,9 @@ class Profile extends Component<{}, ProfileState> {
       <S.ProfileBox
         ref={this.ProfileBoxRef}
         style={{
-          opacity: this.state.visibleCount >= 1 ? 1 : 0,
+          opacity: this.props.visibleCount >= 1 ? 1 : 0,
           transform: `translateY(${
-            this.state.visibleCount >= 1 ? "0" : "50px"
+            this.props.visibleCount >= 1 ? "0" : "50px"
           })`,
           transition: "opacity 0.5s, transform 1.2s",
         }}
@@ -76,4 +92,12 @@ class Profile extends Component<{}, ProfileState> {
   }
 }
 
-export default Profile;
+const mapStateToProps = (state: RootState) => ({
+  visibleCount: state.setVisibleCount.visibleCount,
+});
+
+const mapDispatchToProps = (dispatch: ReturnType<typeof useDispatch>) => ({
+  set_visible_count: (count: number) => dispatch(set_visible_count(count)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);
