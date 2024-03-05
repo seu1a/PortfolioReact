@@ -1,8 +1,7 @@
 import React, { createRef, Component, RefObject } from "react";
 import { connect, useDispatch } from "react-redux";
 import { RootState } from "../../reducers";
-
-import { set_visible_count } from "../../reducers/VisibleCount";
+import { set_profile_visible_count } from "../../reducers/VisibleCount";
 
 import * as S from "../../styles/profile/profile";
 
@@ -11,19 +10,10 @@ interface ProfileState {
   set_visible_count: (count: number) => void;
 }
 
-class Profile extends Component<
-  {
-    visibleCount: number;
-    set_visible_count: (count: number) => void;
-  },
-  ProfileState
-> {
+class Profile extends Component<ProfileState> {
   private ProfileBoxRef: RefObject<HTMLDivElement>;
 
-  constructor(props: {
-    visibleCount: number;
-    set_visible_count: (count: number) => void;
-  }) {
+  constructor(props: ProfileState) {
     super(props);
     this.ProfileBoxRef = createRef();
   }
@@ -64,7 +54,7 @@ class Profile extends Component<
       <S.ProfileBox
         ref={this.ProfileBoxRef}
         style={{
-          opacity: this.props.visibleCount >= 1 ? 1 : 0,
+          opacity: this.props.visibleCount == 1 ? 1 : 0,
           transform: `translateY(${
             this.props.visibleCount >= 1 ? "0" : "50px"
           })`,
@@ -93,11 +83,12 @@ class Profile extends Component<
 }
 
 const mapStateToProps = (state: RootState) => ({
-  visibleCount: state.setVisibleCount.visibleCount,
+  visibleCount: state.setVisibleCount.profileVisibleCount,
 });
 
 const mapDispatchToProps = (dispatch: ReturnType<typeof useDispatch>) => ({
-  set_visible_count: (count: number) => dispatch(set_visible_count(count)),
+  set_visible_count: (count: number) =>
+    dispatch(set_profile_visible_count(count)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
