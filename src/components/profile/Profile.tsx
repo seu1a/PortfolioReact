@@ -1,4 +1,4 @@
-import React, { createRef, Component, RefObject } from "react";
+import { createRef, Component, RefObject } from "react";
 import { connect, useDispatch } from "react-redux";
 import { RootState } from "../../reducers";
 import { set_profile_visible_count } from "../../reducers/VisibleCount";
@@ -36,8 +36,6 @@ class Profile extends Component<ProfileState> {
     }
 
     this.settingHandler(visibleCount);
-
-    console.log(this.props.visibleCount);
   };
 
   componentDidMount(): void {
