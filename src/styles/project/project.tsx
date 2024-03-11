@@ -8,7 +8,7 @@ export const ProjectBox = styled.div`
   align-items: center;
 
   width: 100%;
-  height: 252.5px;
+  height: 200px;
 
   background-color: #363636;
 
@@ -18,17 +18,22 @@ export const ProjectBox = styled.div`
 export const ProjectElement = styled.div`
   position: relative;
 
-  width: 350px;
-  height: 200px;
+  width: 275px;
+  height: 165px;
 
   display: flex;
   justify-content: center;
 
-  margin: 15px;
+  margin: 10px;
 
   background-color: white;
 
+  background-image: url("./images/project_img_sample.png");
+  background-size: cover;
+
   border-radius: 15px;
+
+  overflow: hidden;
 `;
 
 export const ProjectName = styled.span`
@@ -50,6 +55,8 @@ export const ProjectName = styled.span`
 
   color: white;
   background-color: #363636;
+
+  box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.15);
 `;
 
 export const ProjectImageDiv = styled.div`

@@ -1,6 +1,6 @@
-import { Component, createRef, Ref, RefObject } from "react";
+import { Component, createRef, RefObject } from "react";
 import { useDispatch } from "react-redux";
-import { connect, UseDispatch } from "react-redux";
+import { connect } from "react-redux";
 import { RootState } from "../../reducers";
 import { set_project_visible_count } from "../../reducers/VisibleCount";
 
@@ -56,6 +56,7 @@ class Project extends Component<ProjectState> {
             transition: "opacity 0.5s, transform 1.2s",
           }}
         >
+          <S.ProjectImageDiv />
           <S.ProjectName>테스트</S.ProjectName>
         </S.ProjectElement>
 
@@ -65,9 +66,10 @@ class Project extends Component<ProjectState> {
             transform: `translateX(${
               this.props.visibleCount >= 1 ? "0" : "-50px"
             })`,
-            transition: "opacity 0.5s, transform 1.2s",
+            transition: "opacity 0.5s, transform 1.5s",
           }}
         >
+          <S.ProjectImageDiv />
           <S.ProjectName>대소고 야호</S.ProjectName>
         </S.ProjectElement>
 
@@ -77,9 +79,10 @@ class Project extends Component<ProjectState> {
             transform: `translateX(${
               this.props.visibleCount >= 1 ? "0" : "-50px"
             })`,
-            transition: "opacity 0.5s, transform 1.2s",
+            transition: "opacity 0.5s, transform 1.8s",
           }}
         >
+          <S.ProjectImageDiv />
           <S.ProjectName>asfasdfasdf</S.ProjectName>
         </S.ProjectElement>
       </S.ProjectBox>
