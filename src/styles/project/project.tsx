@@ -55,6 +55,8 @@ export const ProjectName = styled.span`
 
   color: white;
   background-color: #363636;
+
+  box-shadow: 0px 0px 2.5px 2.5px rgba(0, 0, 0, 0.15);
 `;
 
 export const ProjectImageDiv = styled.div`
